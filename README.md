@@ -30,7 +30,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-    joeydoesthings/arch-deluge
+    joeydoesthing/arch-deluge2
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
@@ -54,7 +54,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    joeydoesthings/arch-deluge
+    joeydoesthing/arch-deluge2
 ```
 
 **MY Example**
@@ -73,7 +73,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    joeydoesthings/arch-deluge
+    joeydoesthing/arch-deluge2
 ```
 
 **Notes**<br>
