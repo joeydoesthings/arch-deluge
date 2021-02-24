@@ -30,7 +30,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-    binhex/arch-deluge
+    joeydoesthings/arch-deluge
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
@@ -54,7 +54,26 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-deluge
+    joeydoesthings/arch-deluge
+```
+
+**MY Example**
+
+```
+docker run -d \
+    -p 8113:8113 \
+    -p 58847:58847 \
+    -p 58947:58947 \
+    --name=deluge2 \
+    -v /mnt/user/appdata/deluge2/data:/data \
+    -v /mnt/user/appdata/deluge2/config:/config \
+    -v /etc/localtime:/etc/localtime:ro \
+    -e DELUGE_DAEMON_LOG_LEVEL=info \
+    -e DELUGE_WEB_LOG_LEVEL=info \
+    -e UMASK=000 \
+    -e PUID=0 \
+    -e PGID=0 \
+    joeydoesthings/arch-deluge
 ```
 
 **Notes**<br>
