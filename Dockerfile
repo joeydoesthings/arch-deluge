@@ -33,14 +33,14 @@ VOLUME /config
 VOLUME /data
 
 # expose port for http
-EXPOSE 8112
+EXPOSE 8113
 
 # expose port for deluge daemon
-EXPOSE 58846
+EXPOSE 58847
 
 # expose port for incoming torrent data (tcp and udp)
-EXPOSE 58946
-EXPOSE 58946/udp
+EXPOSE 58947
+EXPOSE 58947/udp
 
 # set environment variables for user nobody
 ENV HOME /home/nobody
