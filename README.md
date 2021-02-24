@@ -18,9 +18,9 @@ Latest stable Deluge release from Arch Linux repo.
 **Usage**
 ```
 docker run -d \
-    -p 8112:8112 \
-    -p 58846:58846 \
-    -p 58946:58946 \
+    -p 8113:8113 \
+    -p 58847:58847 \
+    -p 58947:58947 \
     --name=<container name> \
     -v <path for data files>:/data \
     -v <path for config files>:/config \
@@ -42,9 +42,9 @@ Please replace all user variables in the above command defined by <> with the co
 **Example**
 ```
 docker run -d \
-    -p 8112:8112 \
-    -p 58846:58846 \
-    -p 58946:58946 \
+    -p 8113:8113 \
+    -p 58847:58847 \
+    -p 58947:58947 \
     --name=deluge \
     -v /apps/docker/deluge/data:/data \
     -v /apps/docker/deluge/config:/config \
@@ -67,7 +67,7 @@ id <username>
 
 Default password for the webui is "deluge"
 ___
-If you appreciate my work, then please consider buying me a beer  :D
+If you appreciate ~~my~~ binhex's work, then please consider buying ~~me~~ binhex a beer  :D
 
 [![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MM5E27UX6AUU4)
 
